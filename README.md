@@ -1,6 +1,6 @@
 # Orquesta - an open source automation tool for remote terminal operations
 
-As the name implies (orchestra in spanish), this tool work like a director who indicates instructions to musicians (terminals in this context) and each piece is inside a sheet music (a script here). Well, really working with terminals is less complex, because it's possible to decompose all we require into four basic operations: select network nodes, open connections, send commands and close connections. It's the main idea behind the design.
+As the name implies (orchestra in English), this tool works as a director who indicates instructions to musicians (terminals in this context) and each piece is inside a sheet music (a script here). Well, really working with terminals is less complex, because it's possible to decompose all we require into four basic operations: select network nodes, open connections, send commands and close connections. It's the main idea behind the design.
 
 
 ## Motivation
@@ -30,7 +30,7 @@ ip = 127.0.0.1
 
 [foo]
 ip = 127.0.0.1
-port = 2222 
+port = 2222
 ```
 
 The `DEFAULT` section must contain the `port` (TCP port) and `protocol` (ssh or telnet) used by default in the nodes defined within the file. Then a section for each node and its respective  `ip` address (IPv4).
@@ -52,7 +52,7 @@ Mainly consist in a text editor where we write the script and a list of nodes (t
 command | parameters | description |
 --- | --- | --- |
 open  | none | open selected nodes |
-sel   | list of node names or `all` | select the nodes in the list | 
+sel   | list of node names or `all` | select the nodes in the list |
 set   |  var value | create the variable $var |
 send  | text | send text to selected terminals|
 gsend | text | perform substitution of local variables  |
@@ -97,7 +97,7 @@ python orquesta.py
 ### Improvements
 
 * Documentation
-* Testing 
+* Testing
 * Clean up code base, redefine models and data structures
 
 ### Nice to have features
@@ -105,5 +105,5 @@ python orquesta.py
 * Expect-like functionality
 * Commands highlight
 * Select elements using glob patterns
-* Cross platform compatibility 
+* Cross platform compatibility
 * Automatic script execution
